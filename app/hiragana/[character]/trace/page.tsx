@@ -317,6 +317,22 @@ export default function TracePracticePage({
 
         {/* キャンバスエリア */}
         <div className="bg-white rounded-xl sm:rounded-2xl shadow-lg p-3 sm:p-4 md:p-6 mb-4 sm:mb-6">
+          {/* Controls */}
+          <div className="flex items-center justify-center gap-2 mb-3 sm:mb-4">
+            <button
+              onClick={resetCanvas}
+              className="px-3 py-2 bg-gray-200 text-gray-800 rounded-lg active:bg-gray-300 transition-colors text-sm font-medium"
+            >
+              🔄 Reset
+            </button>
+            <button
+              onClick={handleScore}
+              className="px-3 py-2 bg-primary text-white rounded-lg active:bg-blue-600 transition-colors text-sm font-medium"
+            >
+              ✓ Score
+            </button>
+          </div>
+
           <div className="aspect-square max-w-full mx-auto">
             <canvas
               ref={canvasRef}
@@ -331,22 +347,6 @@ export default function TracePracticePage({
               onTouchCancel={stopDrawing}
               style={{ touchAction: 'none', WebkitUserSelect: 'none', userSelect: 'none' }}
             />
-          </div>
-
-          {/* Controls */}
-          <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 sm:gap-4 mt-4 sm:mt-6">
-            <button
-              onClick={resetCanvas}
-              className="px-6 py-4 sm:py-3 bg-gray-200 text-gray-800 rounded-lg active:bg-gray-300 transition-colors text-base font-medium min-h-[48px]"
-            >
-              🔄 Reset
-            </button>
-            <button
-              onClick={handleScore}
-              className="px-6 py-4 sm:py-3 bg-primary text-white rounded-lg active:bg-blue-600 transition-colors text-base font-medium min-h-[48px]"
-            >
-              ✓ Score
-            </button>
           </div>
 
           {/* 前後の文字へのナビゲーション */}
