@@ -89,6 +89,7 @@ export default function HiraganaPage() {
               <Link
                 key={character}
                 href={`/hiragana/${encodeURIComponent(character)}/trace`}
+                prefetch={false}
                 className={`${getMasteryColor(character)} rounded-lg p-3 sm:p-4 text-center transition-all active:scale-95 shadow-md min-h-[80px] sm:min-h-[100px] flex flex-col justify-center`}
               >
                 <div className="text-3xl sm:text-4xl md:text-5xl font-bold mb-1 sm:mb-2">

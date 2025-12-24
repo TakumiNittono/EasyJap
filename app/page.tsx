@@ -117,6 +117,7 @@ export default function Home() {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 mb-4 sm:mb-6">
           <Link
             href="/hiragana"
+            prefetch={false}
             className="bg-primary text-white rounded-xl p-5 sm:p-6 text-center active:bg-blue-600 transition-colors shadow-lg min-h-[80px] sm:min-h-[120px] flex flex-col justify-center"
           >
             <h3 className="text-xl sm:text-2xl font-bold mb-1 sm:mb-2">Hiragana</h3>
@@ -124,6 +125,7 @@ export default function Home() {
           </Link>
           <Link
             href="/katakana"
+            prefetch={false}
             className="bg-secondary text-white rounded-xl p-5 sm:p-6 text-center active:bg-green-600 transition-colors shadow-lg min-h-[80px] sm:min-h-[120px] flex flex-col justify-center"
           >
             <h3 className="text-xl sm:text-2xl font-bold mb-1 sm:mb-2">Katakana</h3>
@@ -131,6 +133,7 @@ export default function Home() {
           </Link>
           <Link
             href="/progress"
+            prefetch={false}
             className="bg-accent text-white rounded-xl p-5 sm:p-6 text-center active:bg-orange-600 transition-colors shadow-lg min-h-[80px] sm:min-h-[120px] flex flex-col justify-center"
           >
             <h3 className="text-xl sm:text-2xl font-bold mb-1 sm:mb-2">View Progress</h3>

@@ -119,3 +119,4 @@ function normalizeUserPoints(
 この改善により、正確な採点が可能になります。
 
 
+
